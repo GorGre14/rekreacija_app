@@ -12,12 +12,12 @@ import {
 
 export const eventRoutes = Router();
 
-eventRoutes.get("/events", listEvents);
-eventRoutes.get("/events/:id", getEvent);
+eventRoutes.get("/", listEvents);
+eventRoutes.get("/:id", getEvent);
 
-eventRoutes.post("/events", authRequired, createEvent);
-eventRoutes.patch("/events/:id", authRequired, updateEvent);
-eventRoutes.delete("/events/:id", authRequired, deleteEvent);
+eventRoutes.post("/", authRequired, createEvent);
+eventRoutes.patch("/:id", authRequired, updateEvent);
+eventRoutes.delete("/:id", authRequired, deleteEvent);
 
-eventRoutes.post("/events/:id/join", authRequired, joinEvent);
-eventRoutes.post("/events/:id/leave", authRequired, leaveEvent);
+eventRoutes.post("/:id/join", authRequired, joinEvent);
+eventRoutes.post("/:id/leave", authRequired, leaveEvent);

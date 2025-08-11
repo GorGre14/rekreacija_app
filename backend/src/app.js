@@ -5,8 +5,8 @@ import morgan from "morgan";
 
 // Adjust the paths below if your files live elsewhere
 import { pool } from "./db/client.js";
-import authRoutes from "./routes/authRoutes.js";
-import eventRoutes from "./routes/eventRoutes.js";
+import { authRoutes } from "./routes/authRoutes.js";
+import { eventRoutes } from "./routes/eventRoutes.js";
 
 // Factory so we can use the same app for local (server.js) and Vercel (api/index.js)
 export function createApp() {
