@@ -1,7 +1,7 @@
 // frontend/src/utils/api.js
 
 const fromEnv = (process.env.REACT_APP_API_BASE || "").trim();
-const prodBase = "https://recreation-finder-app.vercel.app";
+const prodBase = "https://rec-finder-backend.onrender.com";
 
 export const API_BASE =
   fromEnv ||
