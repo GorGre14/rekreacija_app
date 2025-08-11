@@ -1,4 +1,5 @@
 # Recreation Finder - Simple Frontend
+*Deployed version*
 
 A clean, simple Next.js TypeScript frontend for the Recreation Finder app.
 
