@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
 import { useApp } from "../Context/AppContext";
 
-function eventDateTime(e) {
-  return new Date(`${e.date}T${e.time}:00`);
-}
 
 export default function ProfilePage() {
   const { user, events, deleteEvent, leaveEvent } = useApp();

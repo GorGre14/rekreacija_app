@@ -15,7 +15,6 @@ export default function EventDetailsPage() {
     leaveEvent,
     deleteEvent,
     addRating,
-    getAverageRating,
   } = useApp();
   const nav = useNavigate();
 
