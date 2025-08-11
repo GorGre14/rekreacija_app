@@ -16,7 +16,6 @@ async function apiImpl(path, { method = "GET", body, headers } = {}) {
       "Content-Type": "application/json",
       ...(headers || {}),
     },
-    credentials: "include",
   };
   if (body) opts.body = JSON.stringify(body);
 
