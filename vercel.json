@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "builds": [
     {
       "src": "frontend/package.json",
@@ -10,10 +9,7 @@
     },
     {
       "src": "backend/api/index.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": "backend/src/**"
-      }
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -22,16 +18,8 @@
       "dest": "/backend/api/index.js"
     },
     {
-      "src": "/static/(.*)",
-      "dest": "/frontend/build/static/$1"
-    },
-    {
-      "src": "/(.*\\.(js|css|ico|png|jpg|jpeg|svg|woff|woff2|ttf|eot))",
-      "dest": "/frontend/build/$1"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/frontend/build/index.html"
+      "dest": "/frontend/$1"
     }
   ]
 }
