@@ -34,7 +34,7 @@ export default function RegisterPage() {
 
   return (
     <div className="container" style={{ maxWidth: 520, marginTop: 30 }}>
-      <h2>Register</h2>
+      <h2>Create Account</h2>
 
       {err ? (
         <div className="alert alert-danger" role="alert">
